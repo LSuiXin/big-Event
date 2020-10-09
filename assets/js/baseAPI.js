@@ -9,9 +9,9 @@ $.ajaxPrefilter(function (options) {
   }
   //  验证是否写入验证码
   options.complete = function (res) {
-    console.log(res);
+    // console.log(res);
     // 通过responseJSONL来获取状态
-    if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败") {
+    if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
       localStorage.removeItem("token");
       // 跳转到登陆页面
       location.href = "/login.html";

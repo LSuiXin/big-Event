@@ -38,7 +38,9 @@ $("#out").on("click", function () {
  * 渲染用户信息
  */
 function renderAvatar(user) {
-    var name = user.username || user.nickname
+    var name = user.nickname || user.username;
+    // 渲染welcome
+    $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
     // 判断用户是否有头像
     if (user.user_pic !== null) {
         // 图片显示，文字头像隐藏
