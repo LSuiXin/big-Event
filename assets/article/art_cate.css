@@ -16,7 +16,7 @@ body {
       justify-content: space-between;
       align-items: center;
   }
-  #add_list{
+  #add_list,#form-edit{
       padding-top: 10px;
       padding-right: 25px;
   }
